@@ -63,7 +63,7 @@ public class BeanUtils {
         return result;
     }
 
-    public static boolean checkTypes(Type setterType, Type getterType) {
+    private static boolean checkTypes(Type setterType, Type getterType) {
         try {
             Class<?> setterClazz = Class.forName(setterType.getTypeName());
             Class<?> getterClazz = Class.forName(getterType.getTypeName());
